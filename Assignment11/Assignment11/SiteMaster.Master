@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="Assignment11.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="3"><h2>Welcome </h2></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Article.aspx">Article</asp:HyperLink>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+                </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
